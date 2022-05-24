@@ -19,5 +19,5 @@ jobs:
      
     steps: 
       - checkout 
-      - run: chmod +x ./install.sh
+      - run: chmod 777 ./install.sh
       - run: ./install.sh
